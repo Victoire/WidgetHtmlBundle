@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        Html:
+            class: "Victoire\\Widget\\HtmlBundle\\Entity\\WidgetHtml"
+            name: Html
+            
+jms_translation:
+    configs:
+        victoire_html_bundle:
+            dirs: ["@VictoireHtmlBundle"]
+            output_dir: "@VictoireHtmlBundle/Resources/translations"
