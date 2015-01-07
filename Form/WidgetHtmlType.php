@@ -19,10 +19,10 @@ class WidgetHtmlType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-                $builder->add('content', null, array(
+        $builder->add('content', null, array(
             'label' => 'widget_html.form.content.label'
         ));
-                parent::buildForm($builder, $options);
+        parent::buildForm($builder, $options);
 
     }
 
