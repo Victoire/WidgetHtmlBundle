@@ -16,7 +16,7 @@ class WidgetHtml extends Widget
     /**
      * @var content
      *
-     * @ORM\Column(name="content", type="text", length=1000)
+     * @ORM\Column(name="content", type="text")
      */
     protected $content;
 
