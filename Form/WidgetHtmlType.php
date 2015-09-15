@@ -5,6 +5,7 @@ namespace Victoire\Widget\HtmlBundle\Form;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
+use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 
 /**
@@ -19,9 +20,14 @@ class WidgetHtmlType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('content', null, array(
-            'label' => 'widget_html.form.content.label'
-        ));
+        $mode = $options['mode'];
+
+        if ($mode == Widget::MODE_STATIC) {
+            $builder->add('content', null, array(
+                'label' => 'widget_html.form.content.label',
+                'required' => true,
+            ));
+        }
         parent::buildForm($builder, $options);
 
     }

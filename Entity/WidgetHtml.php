@@ -2,6 +2,7 @@
 namespace Victoire\Widget\HtmlBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Victoire\Bundle\CoreBundle\Annotations as VIC;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
@@ -15,8 +16,8 @@ class WidgetHtml extends Widget
 
     /**
      * @var content
-     *
-     * @ORM\Column(name="content", type="text")
+     * @VIC\ReceiverProperty("htmlable")
+     * @ORM\Column(name="content", type="text", nullable=true)
      */
     protected $content;
 
