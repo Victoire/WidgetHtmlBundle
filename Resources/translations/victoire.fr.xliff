@@ -18,6 +18,10 @@
         <source>widget_html.form.text.label</source>
         <target state="new">text</target>
       </trans-unit>
+      <trans-unit id="1" resname="widget_html.form.content.label">
+        <source>widget_html.form.content.label</source>
+        <target state="new">Contenu HTML</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
