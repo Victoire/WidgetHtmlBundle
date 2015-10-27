@@ -1,4 +1,5 @@
 <?php
+
 namespace Victoire\Widget\HtmlBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -6,14 +7,13 @@ use Victoire\Bundle\CoreBundle\Annotations as VIC;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetHtml
+ * WidgetHtml.
  *
  * @ORM\Table("vic_widget_html")
  * @ORM\Entity
  */
 class WidgetHtml extends Widget
 {
-
     /**
      * @var content
      * @VIC\ReceiverProperty("htmlable")
@@ -24,18 +24,17 @@ class WidgetHtml extends Widget
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent
+     * //TODO Check the generated value and make it more consistent.
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
         return 'Html #'.$this->id;
     }
 
-
     /**
-     * Get content
+     * Get content.
      *
      * @return string
      */
@@ -43,9 +42,9 @@ class WidgetHtml extends Widget
     {
         return $this->content;
     }
-    
+
     /**
-     * Set content
+     * Set content.
      *
      * @param string $content
      * @return $this
@@ -53,7 +52,7 @@ class WidgetHtml extends Widget
     public function setContent($content)
     {
         $this->content = $content;
+
         return $this;
     }
-
 }

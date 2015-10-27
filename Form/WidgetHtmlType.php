@@ -7,15 +7,16 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
-
 /**
- * WidgetHtml form type
+ * WidgetHtml form type.
  */
 class WidgetHtmlType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
+     *
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
@@ -23,10 +24,10 @@ class WidgetHtmlType extends WidgetType
         $mode = $options['mode'];
 
         if ($mode == Widget::MODE_STATIC) {
-            $builder->add('content', null, array(
-                'label' => 'widget_html.form.content.label',
+            $builder->add('content', null, [
+                'label'    => 'widget_html.form.content.label',
                 'required' => true,
-            ));
+            ]);
         }
         parent::buildForm($builder, $options);
 
@@ -34,22 +35,23 @@ class WidgetHtmlType extends WidgetType
 
 
     /**
-     * bind form to WidgetHtml entity
+     * bind form to WidgetHtml entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\HtmlBundle\Entity\WidgetHtml',
             'widget'             => 'Html',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The form name
      */
