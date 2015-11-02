@@ -30,9 +30,7 @@ class WidgetHtmlType extends WidgetType
             ]);
         }
         parent::buildForm($builder, $options);
-
     }
-
 
     /**
      * bind form to WidgetHtml entity.

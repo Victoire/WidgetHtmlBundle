@@ -47,6 +47,7 @@ class WidgetHtml extends Widget
      * Set content.
      *
      * @param string $content
+     *
      * @return $this
      */
     public function setContent($content)
