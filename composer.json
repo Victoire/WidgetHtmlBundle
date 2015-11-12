@@ -1,24 +1,40 @@
 {
-    "name": "friendsofvictoire/html-widget",
-    "type": "symfony-bundle",
-    "description": "Victoire DCMS HTML widget",
-    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "FoV", "Dynamic", "CMS", "HTML"],
-    "homepage": "http://victoire.io",
-    "license": "MIT",
-    "authors": [
+    "name"             : "friendsofvictoire/html-widget",
+    "type"             : "symfony-bundle",
+    "description"      : "Victoire DCMS HTML widget",
+    "keywords"         : [
+        "DCMS",
+        "Victoire",
+        "widget",
+        "FriendsofVictoire",
+        "FoV",
+        "Dynamic",
+        "CMS",
+        "HTML"
+    ],
+    "homepage"         : "http://victoire.io",
+    "license"          : "MIT",
+    "authors"          : [
         {
-            "name": "Loïc Goyet",
+            "name" : "Loïc Goyet",
             "email": "loic@victoire.io"
         }
     ],
-    "require": {
-        "php"                      : ">=5.3.3",
-        "symfony/framework-bundle" : "~2.3",
-        "victoire/victoire"        : "~1.3.0"
+    "require"          : {
+        "php"                     : ">=5.3.3",
+        "symfony/framework-bundle": "~2.3",
+        "victoire/victoire"       : "~1.3.0"
     },
-    "autoload": {
-        "psr-0": { "Victoire\\Widget\\HtmlBundle": "" }
+    "autoload"         : {
+        "psr-0": {
+            "Victoire\\Widget\\HtmlBundle": ""
+        }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/HtmlBundle"
+    "target-dir"       : "Victoire/Widget/HtmlBundle",
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.3.x-dev"
+        }
+    }
 }
