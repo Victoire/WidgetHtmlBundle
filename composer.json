@@ -1,5 +1,5 @@
 {
-    "name": "friendsofvictoire/html-widget",
+    "name": "victoire/html-widget",
     "type": "symfony-bundle",
     "description": "Victoire DCMS HTML widget",
     "keywords": [
