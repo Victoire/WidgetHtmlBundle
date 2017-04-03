@@ -9,7 +9,7 @@ This bundles gives you access to the *HTML Widget*, with it you can integrate HT
 
 ## Set Up Victoire
 
-If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/doc/setup.md)*
 
 ## Install the bundle
 
