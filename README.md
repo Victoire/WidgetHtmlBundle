@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/Victoire/WidgetHtmlBundle.svg?style=shield)](https://circleci.com/gh/Victoire/WidgetHtmlBundle)
 
-Victoire DCMS Html Bundle
+Victoire Html Bundle
 ============
 
 ## What is the purpose of this bundle
@@ -13,7 +13,7 @@ If you haven't already, you can follow the steps to set up Victoire *[here](http
 
 ## Install the bundle
 
-    php composer.phar require friendsofvictoire/html-widget
+    php composer.phar require victoire/html-widget
 
 ### Reminder
 
