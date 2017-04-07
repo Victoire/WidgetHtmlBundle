@@ -1,6 +1,6 @@
 <?php
 
-namespace Victoire\Widget\TitleBundle\Tests\Context;
+namespace Victoire\Widget\HtmlBundle\Tests\Context;
 
 use Knp\FriendlyContexts\Context\RawMinkContext;
 
